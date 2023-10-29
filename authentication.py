@@ -1,0 +1,1 @@
+DB_CONNECTION_STRING = "postgresql+psycopg2://hiepdang:abcdef@127.0.0.1/atp"
