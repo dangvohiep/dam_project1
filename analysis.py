@@ -161,6 +161,9 @@ g.set_axis_labels(x_var="Height", y_var="Aces", fontsize=20)
 # Set title for each subplot based on the season, with specified font style and size
 g.set_titles(template="{col_name}", fontweight="bold", fontsize=20)
 
+# Add the legend without a title and specify the order of labels
+g.add_legend(title="", fontsize=20, label_order=["winner", "loser"])
+
 # Adjust legend title and label sizes
 plt.setp(g._legend.get_title(), fontsize=20)
 plt.setp(g._legend.get_texts(), fontsize=20)
@@ -168,9 +171,6 @@ plt.setp(g._legend.get_texts(), fontsize=20)
 # Adjust font sizes for tick labels on x and y axes
 g.set_xticklabels(fontsize=15)
 g.set_yticklabels(fontsize=15)
-
-# Add the legend without a title and specify the order of labels
-g.add_legend(title="", fontsize=20, label_order=["winner", "loser"])
 
 # Set the y-axis to start from 0
 g.set(ylim=(0, None))

@@ -339,7 +339,7 @@ class Rankings(ETL):
 
 if __name__ == '__main__':
 
-    start_season    = 1985
+    start_season    = 1991
     end_season      = 2023
 
     for season in range(start_season, end_season+1):
